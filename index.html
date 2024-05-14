@@ -1,0 +1,1422 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>HealthInfoLife</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white position-fixed w-100 z-3 shadow">
+        <div class="container position-relative">
+            <button class="navbar-toggler border-0 d-lg-none p-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand me-0 ms-4 ms-md-0" href="#">
+                <img src="https://www.healthinfolife.com/images/logo.png" width="130" height="64" alt="">
+            </a>
+            <div class="order-0 order-md-last">
+                <div class="d-flex justify-content-center text-center p-3 px-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1rem" height="1rem"
+                        fill="#000">
+                        <path
+                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mx-auto mt-2 mt-lg-0 flex-wrap fw-semibold">
+                    <li class="nav-item">
+                        <a class="text-secondary nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="text-secondary nav-link" href="#">Travel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="text-secondary nav-link" href="#">Lifestyle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="text-secondary nav-link" href="#">Fitness and Sports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="text-secondary nav-link" href="#">Health and beauty</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="text-secondary nav-link" href="#">Home and Tech</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="position-absolute w-100 start-0 top-100 collapse bg-white z-3" id="collapseExample">
+            <div>
+                <div class="d-flex justify-content-center px-3 px-md-0">
+                    <div class="col-lg-6 col-md-8 col-12 position-relative">
+                        <div class="d-flex align-items-center border border-dark pe-3">
+                            <input type="text" class="form-control p-3 border-0" placeholder="Search Here"
+                                aria-label="Search Here" aria-describedby="basic-addon2" onkeyup="search(this)">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1rem" height="1rem"
+                                    fill="#000">
+                                    <path
+                                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="position-absolute w-100 border border-dark d-none bg-white z-3">
+                            <ul class="list-unstyled pt-2 mb-0 list-group">
+                                <li class="list-group-item-action p-2">
+                                    <a href="#" class="text-dark text-decoration-none">
+                                        <div class="d-flex flex-row">
+                                            <img src="https://www.radiustheme.com/demo/html/neeon/media/gallery/post-lg_1.jpg"
+                                                class="h-100 object-fit-cover rounded me-1" height="100" width="120"
+                                                alt="">
+                                            <div class="overflow-hidden d-flex align-items-center">
+                                                <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                    Holiday shopping Holiday shopping
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-group-item-action p-2">
+                                    <a href="#" class="text-dark text-decoration-none">
+                                        <div class="d-flex flex-row">
+                                            <img src="https://www.radiustheme.com/demo/html/neeon/media/gallery/post-lg_1.jpg"
+                                                class="h-100 object-fit-cover rounded me-1" height="100" width="120"
+                                                alt="">
+                                            <div class="overflow-hidden d-flex align-items-center">
+                                                <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                    Holiday shopping Holiday shopping
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-group-item-action p-2">
+                                    <a href="#" class="text-dark text-decoration-none">
+                                        <div class="d-flex flex-row">
+                                            <img src="https://www.radiustheme.com/demo/html/neeon/media/gallery/post-lg_1.jpg"
+                                                class="h-100 object-fit-cover rounded me-1" height="100" width="120"
+                                                alt="">
+                                            <div class="overflow-hidden d-flex align-items-center">
+                                                <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                    Holiday shopping Holiday shopping
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="d-flex search-res justify-content-center z-3">
+                    <div class="w-50 search_resp_size border border-top-0 border-dark bg-white overflow-y-scroll">
+                        <h5 class="fw-bold mt-2 px-2">Recent</h5>
+                        <ul class="list-unstyled px-4">
+                            <li>
+                                <a href="#" class="text-decoration-none text-muted">
+                                    <img src="Assests/handlebars-spin-bike-indoors.jpg" width="80px" class="img-fluid"
+                                        alt="">
+                                    Abercrombie &amp; Fitch
+                                </a>
+                            </li>
+                            <li><a href="#" class="text-decoration-none text-muted">TRACTR Jeans</a></li>
+                            <li><a href="#" class="text-decoration-none text-muted">UNIF</a></li>
+                            <li><a href="#" class="text-decoration-none text-muted">Albee Baby</a></li>
+                        </ul>
+                        <hr class="mb-1">
+                        <h5 class="fw-bold mt-1 px-2">Recent</h5>
+                        <ul class="list-unstyled px-4">
+                            <li><a href="#" class="text-decoration-none text-muted">Abercrombie &amp; Fitch</a></li>
+                            <li><a href="#" class="text-decoration-none text-muted">TRACTR Jeans</a></li>
+                            <li><a href="#" class="text-decoration-none text-muted">UNIF</a></li>
+                            <li><a href="#" class="text-decoration-none text-muted">Albee Baby</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+    </nav>
+    <main>
+        <section>
+            <div class="custom-bg-01">
+                <div class="container">
+                    <div class="row py-5 row-cols-xl-4 row-cols-md-2 row-cols-1 g-3">
+                        <div class="col">
+                            <div class="custom_card_01 d-flex gap-4">
+                                <div class="position-relative image_with_badge">
+                                    <a href="#">
+                                        <img src="https://www.radiustheme.com/demo/html/neeon/media/gallery/post-sm_1.jpg"
+                                            class="rounded-circle" alt="">
+                                    </a>
+                                </div>
+                                <div>
+                                    <div>
+                                        <a href="#"
+                                            class="text-uppercase text-decoration-none text-secondary small fw-semibold">Lifestyle</a>
+                                    </div>
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        <p class="fw-semibold mb-0 lh-sm fs_custom_01 underline_effect">
+                                            Top Beste ampute are
+                                            Speak Market.
+                                        </p>
+                                    </a>
+                                    <div
+                                        class="d-flex align-items-center text-secondary-emphasis gap-2 custom_small_01 mt-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="1rem"
+                                            height="1rem" fill="#a5a6aa">
+                                            <path
+                                                d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z">
+                                            </path>
+                                        </svg>
+                                        DECEMBER 9, 2022
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="custom_card_01 d-flex gap-4">
+                                <div class="position-relative image_with_badge">
+                                    <a href="#">
+                                        <img src="https://www.radiustheme.com/demo/html/neeon/media/gallery/post-sm_1.jpg"
+                                            class="rounded-circle" alt="">
+                                    </a>
+                                </div>
+                                <div>
+                                    <div>
+                                        <a href="#"
+                                            class="text-uppercase text-decoration-none text-secondary small fw-semibold">Lifestyle</a>
+                                    </div>
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        <p class="fw-semibold mb-0 lh-sm fs_custom_01 underline_effect">
+                                            Top Beste ampute are
+                                            Speak Market.
+                                        </p>
+                                    </a>
+                                    <div
+                                        class="d-flex align-items-center text-secondary-emphasis gap-2 custom_small_01 mt-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="1rem"
+                                            height="1rem" fill="#a5a6aa">
+                                            <path
+                                                d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z">
+                                            </path>
+                                        </svg>
+                                        DECEMBER 9, 2022
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="custom_card_01 d-flex gap-4">
+                                <div class="position-relative image_with_badge">
+                                    <a href="#">
+                                        <img src="https://www.radiustheme.com/demo/html/neeon/media/gallery/post-sm_1.jpg"
+                                            class="rounded-circle" alt="">
+                                    </a>
+                                </div>
+                                <div>
+                                    <div>
+                                        <a href="#"
+                                            class="text-uppercase text-decoration-none text-secondary small fw-semibold">Lifestyle</a>
+                                    </div>
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        <p class="fw-semibold mb-0 lh-sm fs_custom_01 underline_effect">
+                                            Top Beste ampute are
+                                            Speak Market.
+                                        </p>
+                                    </a>
+                                    <div
+                                        class="d-flex align-items-center text-secondary-emphasis gap-2 custom_small_01 mt-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="1rem"
+                                            height="1rem" fill="#a5a6aa">
+                                            <path
+                                                d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z">
+                                            </path>
+                                        </svg>
+                                        DECEMBER 9, 2022
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="custom_card_01 d-flex gap-4">
+                                <div class="position-relative image_with_badge">
+                                    <a href="#">
+                                        <img src="https://www.radiustheme.com/demo/html/neeon/media/gallery/post-sm_1.jpg"
+                                            class="rounded-circle" alt="">
+                                    </a>
+                                </div>
+                                <div>
+                                    <div>
+                                        <a href="#"
+                                            class="text-uppercase text-decoration-none text-secondary small fw-semibold">Lifestyle</a>
+                                    </div>
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        <p class="fw-semibold mb-0 lh-sm fs_custom_01 underline_effect">
+                                            Top Beste ampute are
+                                            Speak Market.
+                                        </p>
+                                    </a>
+                                    <div
+                                        class="d-flex align-items-center text-secondary-emphasis gap-2 custom_small_01 mt-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="1rem"
+                                            height="1rem" fill="#a5a6aa">
+                                            <path
+                                                d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z">
+                                            </path>
+                                        </svg>
+                                        DECEMBER 9, 2022
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row g-0 g-md-5">
+                    <div class="col-lg-7 col-12 position-relative p-0 image_hover_zoom">
+                        <div class="h-100">
+                            <div class="position-absolute bottom-0 px-3 z-1">
+                                <div class="ms-md-3 mb-md-5">
+                                    <a href="#"
+                                        class="text-decoration-none text-white bg-danger d-inline-block py-1 px-2 text-uppercase custom_small_01 fw-bolder mb-3">
+                                        Fashion
+                                    </a>
+                                    <div>
+                                        <a href="#" class="text-decoration-none text-white">
+                                            <p class="h4 underline_effect text-white">
+                                                Top 5 Sleeveless Dresses by NTG Xintianji
+                                            </p>
+                                            <ul class="mt-2 list-unstyled d-flex gap-3 custom_small_01">
+                                                <li>
+                                                    <p class="text-uppercase text-white-50 mb-0">by <span
+                                                            class="fw-bolder text-white">Admin</span></p>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex align-items-center text-white-50 gap-2">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                                            width="1rem" height="1rem" fill="rgba(255,255,255,.5)">
+                                                            <path
+                                                                d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z" />
+                                                        </svg>
+                                                        DECEMBER 9, 2022
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden h-100 hero_img">
+                                <a href="#">
+                                    <img src="https://www.radiustheme.com/demo/html/neeon/media/gallery/post-xl_1.jpg"
+                                        class="img-fluid h-100" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-12">
+                        <div class="row">
+                            <a href="#"
+                                class="text-dark text-decoration-none row mb-3 text_hover pe-0 mt-3 mt-lg-0 image_hover_zoom">
+                                <div class="col-xl-5 col-lg-6 col-md-3 pe-0">
+                                    <div class="overflow-hidden">
+                                        <img src="https://www.radiustheme.com/demo/html/neeon/media/gallery/post-lg_1.jpg"
+                                            alt="card" class="img-fluid h-100 w-100 object-fit-cover rounded-1">
+                                    </div>
+                                </div>
+                                <div class="col-xl-7 col-lg-6 col-md-9">
+                                    <div>
+                                        <div class="mt-3 mt-md-0">
+                                            <div
+                                                class="text-decoration-none text-white bg-warning d-inline-block py-1 px-2 text-uppercase custom_small_01 fw-bolder mb-1">
+                                                Fashion
+                                            </div>
+                                        </div>
+                                        <p class="fw-semibold mb-0 lh-sm fs_custom_01 underline_effect">
+                                            50 Years After The Moon
+                                            Landing: How Close Is
+                                            Space Travel, Really?
+                                        </p>
+                                        <div
+                                            class="d-flex align-items-center text-secondary-emphasis gap-2 custom_small_01 mt-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="1rem"
+                                                height="1rem" fill="#a5a6aa">
+                                                <path
+                                                    d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z" />
+                                            </svg>
+                                            DECEMBER 9, 2022
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#"
+                                class="text-dark text-decoration-none row mb-3 text_hover pe-0 mt-3 mt-lg-0 image_hover_zoom">
+                                <div class="col-xl-5 col-lg-6 col-md-3 pe-0">
+                                    <div class="overflow-hidden">
+                                        <img src="https://www.radiustheme.com/demo/html/neeon/media/gallery/post-lg_1.jpg"
+                                            alt="card" class="img-fluid h-100 w-100 object-fit-cover rounded-1">
+                                    </div>
+                                </div>
+                                <div class="col-xl-7 col-lg-6 col-md-9">
+                                    <div>
+                                        <div class="mt-3 mt-md-0">
+                                            <div
+                                                class="text-decoration-none text-white bg-warning d-inline-block py-1 px-2 text-uppercase custom_small_01 fw-bolder mb-1">
+                                                Fashion
+                                            </div>
+                                        </div>
+                                        <p class="fw-semibold mb-0 lh-sm fs_custom_01 underline_effect">
+                                            50 Years After The Moon
+                                            Landing: How Close Is
+                                            Space Travel, Really?
+                                        </p>
+                                        <div
+                                            class="d-flex align-items-center text-secondary-emphasis gap-2 custom_small_01 mt-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="1rem"
+                                                height="1rem" fill="#a5a6aa">
+                                                <path
+                                                    d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z" />
+                                            </svg>
+                                            DECEMBER 9, 2022
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#"
+                                class="text-dark text-decoration-none row mb-3 text_hover pe-0 mt-3 mt-lg-0 image_hover_zoom">
+                                <div class="col-xl-5 col-lg-6 col-md-3 pe-0">
+                                    <div class="overflow-hidden">
+                                        <img src="https://www.radiustheme.com/demo/html/neeon/media/gallery/post-lg_1.jpg"
+                                            alt="card" class="img-fluid h-100 w-100 object-fit-cover rounded-1">
+                                    </div>
+                                </div>
+                                <div class="col-xl-7 col-lg-6 col-md-9">
+                                    <div>
+                                        <div class="mt-3 mt-md-0">
+                                            <div
+                                                class="text-decoration-none text-white bg-warning d-inline-block py-1 px-2 text-uppercase custom_small_01 fw-bolder mb-1">
+                                                Fashion
+                                            </div>
+                                        </div>
+                                        <p class="fw-semibold mb-0 lh-sm fs_custom_01 underline_effect">
+                                            50 Years After The Moon
+                                            Landing: How Close Is
+                                            Space Travel, Really?
+                                        </p>
+                                        <div
+                                            class="d-flex align-items-center text-secondary-emphasis gap-2 custom_small_01 mt-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="1rem"
+                                                height="1rem" fill="#a5a6aa">
+                                                <path
+                                                    d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z" />
+                                            </svg>
+                                            DECEMBER 9, 2022
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container mt-5">
+                <a href="#">
+                    <img src="https://www.radiustheme.com/demo/html/neeon/media/gallery/ad-banner_1.jpg"
+                        class="img-fluid w-100 rounded" alt="">
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <div class="custom-bg-02 position-relative py-3">
+                <img src="assets/images/home/element_3.png" alt="" class="position-absolute top-0 end-0 me-5">
+                <img src="assets/images/home/element_4.png" alt="" class="position-absolute bottom-0 end-0">
+                <div class="container">
+                    <p class="h3 mb-3 fw-semibold">Top Stories</p>
+                    <div class="row row-cols-lg-4 row-cols-sm-2 row-cols-1 py-5">
+                        <div class="col">
+                            <a href="#" class="card border-0 image_hover_zoom text-decoration-none bg-transparent">
+                                <div class="overflow-hidden">
+                                    <img src="https://www.healthinfolife.com/images/blog/computer-desk---.jpg"
+                                        class="img-fluid" alt="...">
+                                </div>
+                                <div class="card-body px-0">
+                                    <p class="custom_small_01 text-muted text-uppercase mb-2 fw-semibold">music</p>
+                                    <p class="card-title fs_custom_01 fw-semibold lh-sm underline_effect">Top 5
+                                        Sleeveless Dresses by NTG Xintianji</p>
+                                    <ul class="mt-2 list-unstyled d-flex gap-3 custom_small_01 mb-0">
+                                        <li>
+                                            <p class="text-uppercase mb-0">by
+                                                <span class="fw-bolder">Admin</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                                    width="1rem" height="1rem" fill="#a5a6aa">
+                                                    <path
+                                                        d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z" />
+                                                </svg>
+                                                DECEMBER 9, 2022
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="card border-0 image_hover_zoom text-decoration-none bg-transparent">
+                                <div class="overflow-hidden">
+                                    <img src="https://www.healthinfolife.com/images/blog/computer-desk---.jpg"
+                                        class="img-fluid" alt="...">
+                                </div>
+                                <div class="card-body px-0">
+                                    <p class="custom_small_01 text-muted text-uppercase mb-2 fw-semibold">music</p>
+                                    <p class="card-title fs_custom_01 fw-semibold lh-sm underline_effect">Top 5
+                                        Sleeveless Dresses by NTG Xintianji</p>
+                                    <ul class="mt-2 list-unstyled d-flex gap-3 custom_small_01 mb-0">
+                                        <li>
+                                            <p class="text-uppercase mb-0">by
+                                                <span class="fw-bolder">Admin</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                                    width="1rem" height="1rem" fill="#a5a6aa">
+                                                    <path
+                                                        d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z" />
+                                                </svg>
+                                                DECEMBER 9, 2022
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="card border-0 image_hover_zoom text-decoration-none bg-transparent">
+                                <div class="overflow-hidden">
+                                    <img src="https://www.healthinfolife.com/images/blog/computer-desk---.jpg"
+                                        class="img-fluid" alt="...">
+                                </div>
+                                <div class="card-body px-0">
+                                    <p class="custom_small_01 text-muted text-uppercase mb-2 fw-semibold">music</p>
+                                    <p class="card-title fs_custom_01 fw-semibold lh-sm underline_effect">Top 5
+                                        Sleeveless Dresses by NTG Xintianji</p>
+                                    <ul class="mt-2 list-unstyled d-flex gap-3 custom_small_01 mb-0">
+                                        <li>
+                                            <p class="text-uppercase mb-0">by
+                                                <span class="fw-bolder">Admin</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                                    width="1rem" height="1rem" fill="#a5a6aa">
+                                                    <path
+                                                        d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z" />
+                                                </svg>
+                                                DECEMBER 9, 2022
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="card border-0 image_hover_zoom text-decoration-none bg-transparent">
+                                <div class="overflow-hidden">
+                                    <img src="https://www.healthinfolife.com/images/blog/computer-desk---.jpg"
+                                        class="img-fluid" alt="...">
+                                </div>
+                                <div class="card-body px-0">
+                                    <p class="custom_small_01 text-muted text-uppercase mb-2 fw-semibold">music</p>
+                                    <p class="card-title fs_custom_01 fw-semibold lh-sm underline_effect">Top 5
+                                        Sleeveless Dresses by NTG Xintianji</p>
+                                    <ul class="mt-2 list-unstyled d-flex gap-3 custom_small_01 mb-0">
+                                        <li>
+                                            <p class="text-uppercase mb-0">by
+                                                <span class="fw-bolder">Admin</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                                    width="1rem" height="1rem" fill="#a5a6aa">
+                                                    <path
+                                                        d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z" />
+                                                </svg>
+                                                DECEMBER 9, 2022
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <p class="h3 mt-5 mb-4 fw-bold">What's New</p>
+                <div class="row g-0 g-md-5">
+                    <div class="col-lg-9">
+                        <div class="row g-md-5">
+                            <div class="col-lg-7 position-relative p-0 image_hover_zoom">
+                                <div class="h-100">
+                                    <div class="position-absolute bottom-0 px-3 z-1">
+                                        <div class="ms-md-3 mb-md-5">
+                                            <a href="#"
+                                                class="text-decoration-none text-white bg-danger d-inline-block py-1 px-2 text-uppercase custom_small_01 fw-bolder mb-3">
+                                                Fashion
+                                            </a>
+                                            <div>
+                                                <a href="#" class="text-decoration-none text-white">
+                                                    <p class="h4 underline_effect text-white">
+                                                        Top 5 Sleeveless Dresses by NTG Xintianji
+                                                    </p>
+                                                    <ul class="mt-2 list-unstyled d-flex gap-3 custom_small_01">
+                                                        <li>
+                                                            <p class="text-uppercase text-white-50 mb-0">by <span
+                                                                    class="fw-bolder text-white">Admin</span></p>
+                                                        </li>
+                                                        <li>
+                                                            <div class="d-flex align-items-center text-white-50 gap-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 448 512" width="1rem" height="1rem"
+                                                                    fill="rgba(255,255,255,.5)">
+                                                                    <path
+                                                                        d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z" />
+                                                                </svg>
+                                                                DECEMBER 9, 2022
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="overflow-hidden h-100 hero_img">
+                                        <a href="#">
+                                            <img src="https://www.radiustheme.com/demo/html/neeon/media/gallery/post-xl_1.jpg"
+                                                class="img-fluid h-100" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="row row-cols-lg-1 pt-3 pt-md-0 g-3">
+                                    <a href="#" class="col text-dark text-decoration-none custom_card_02">
+                                        <div class="image_hover_zoom">
+                                            <div class="d-flex align-items-center">
+                                                <div class="pe-3 w-100">
+                                                    <p
+                                                        class="custom_small_01 text-muted text-uppercase mb-2 fw-semibold">
+                                                        music</p>
+                                                    <p class="fs_custom_01 fw-bold lh-sm underline_effect">
+                                                        Top 5
+                                                        Sleeveless Dresses by NTG Xintianji</p>
+                                                    <div class="d-flex align-items-center gap-2 custom_small_01 mt-1">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                                            width="1rem" height="1rem" fill="#a5a6aa">
+                                                            <path
+                                                                d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z" />
+                                                        </svg>
+                                                        DECEMBER 9, 2022
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div
+                                                        class="position-relative image_with_badge-02 overflow-hidden rounded">
+                                                        <img src="https://www.healthinfolife.com/images/blog/computer-desk---.jpg"
+                                                            class="img-fluid h-100" alt="...">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="col text-dark text-decoration-none custom_card_02">
+                                        <div class="image_hover_zoom">
+                                            <div class="d-flex align-items-center">
+                                                <div class="pe-3 w-100">
+                                                    <p
+                                                        class="custom_small_01 text-muted text-uppercase mb-2 fw-semibold">
+                                                        music</p>
+                                                    <p class="fs_custom_01 fw-bold lh-sm underline_effect">
+                                                        Top 5
+                                                        Sleeveless Dresses by NTG Xintianji</p>
+                                                    <div class="d-flex align-items-center gap-2 custom_small_01 mt-1">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                                            width="1rem" height="1rem" fill="#a5a6aa">
+                                                            <path
+                                                                d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z" />
+                                                        </svg>
+                                                        DECEMBER 9, 2022
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div
+                                                        class="position-relative image_with_badge-02 overflow-hidden rounded">
+                                                        <img src="https://www.healthinfolife.com/images/blog/computer-desk---.jpg"
+                                                            class="img-fluid h-100" alt="...">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="col text-dark text-decoration-none custom_card_02">
+                                        <div class="image_hover_zoom">
+                                            <div class="d-flex align-items-center">
+                                                <div class="pe-3 w-100">
+                                                    <p
+                                                        class="custom_small_01 text-muted text-uppercase mb-2 fw-semibold">
+                                                        music</p>
+                                                    <p class="fs_custom_01 fw-bold lh-sm underline_effect">
+                                                        Top 5
+                                                        Sleeveless Dresses by NTG Xintianji</p>
+                                                    <div class="d-flex align-items-center gap-2 custom_small_01 mt-1">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                                            width="1rem" height="1rem" fill="#a5a6aa">
+                                                            <path
+                                                                d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z" />
+                                                        </svg>
+                                                        DECEMBER 9, 2022
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div
+                                                        class="position-relative image_with_badge-02 overflow-hidden rounded">
+                                                        <img src="https://www.healthinfolife.com/images/blog/computer-desk---.jpg"
+                                                            class="img-fluid h-100" alt="...">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="col text-dark text-decoration-none custom_card_02">
+                                        <div class="image_hover_zoom">
+                                            <div class="d-flex align-items-center">
+                                                <div class="pe-3 w-100">
+                                                    <p
+                                                        class="custom_small_01 text-muted text-uppercase mb-2 fw-semibold">
+                                                        music</p>
+                                                    <p class="fs_custom_01 fw-bold lh-sm underline_effect">
+                                                        Top 5
+                                                        Sleeveless Dresses by NTG Xintianji</p>
+                                                    <div class="d-flex align-items-center gap-2 custom_small_01 mt-1">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                                            width="1rem" height="1rem" fill="#a5a6aa">
+                                                            <path
+                                                                d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z" />
+                                                        </svg>
+                                                        DECEMBER 9, 2022
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div
+                                                        class="position-relative image_with_badge-02 overflow-hidden rounded">
+                                                        <img src="https://www.healthinfolife.com/images/blog/computer-desk---.jpg"
+                                                            class="img-fluid h-100" alt="...">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="h3 fw-bold mb-3 mt-5">Lifestyle</p>
+                            <div class="row g-2">
+                                <div class="col-md-6 position-relative image_hover_zoom">
+                                    <div class="h-100">
+                                        <div class="position-absolute bottom-0 px-3 z-1">
+                                            <div class="ms-md-3 mb-md-5">
+                                                <a href="#"
+                                                    class="text-decoration-none text-white bg-danger d-inline-block py-1 px-2 text-uppercase custom_small_01 fw-bolder mb-3">
+                                                    Fashion
+                                                </a>
+                                                <div>
+                                                    <a href="#" class="text-decoration-none text-white">
+                                                        <p class="h4 underline_effect text-white">
+                                                            Top 5 Sleeveless Dresses by NTG Xintianji
+                                                        </p>
+                                                        <ul class="mt-2 list-unstyled d-flex gap-3 custom_small_01">
+                                                            <li>
+                                                                <p class="text-uppercase text-white-50 mb-0">by <span
+                                                                        class="fw-bolder text-white">Admin</span></p>
+                                                            </li>
+                                                            <li>
+                                                                <div
+                                                                    class="d-flex align-items-center text-white-50 gap-2">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 448 512" width="1rem" height="1rem"
+                                                                        fill="rgba(255,255,255,.5)">
+                                                                        <path
+                                                                            d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z" />
+                                                                    </svg>
+                                                                    DECEMBER 9, 2022
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="overflow-hidden h-100 hero_img rounded-1">
+                                            <a href="#">
+                                                <img src="https://www.radiustheme.com/demo/html/neeon/media/gallery/post-xl_1.jpg"
+                                                    class="img-fluid h-100" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 position-relative image_hover_zoom">
+                                    <div class="h-100">
+                                        <div class="position-absolute bottom-0 px-3 z-1">
+                                            <div class="ms-md-3 mb-md-5">
+                                                <a href="#"
+                                                    class="text-decoration-none text-white bg-danger d-inline-block py-1 px-2 text-uppercase custom_small_01 fw-bolder mb-3">
+                                                    Fashion
+                                                </a>
+                                                <div>
+                                                    <a href="#" class="text-decoration-none text-white">
+                                                        <p class="h4 underline_effect text-white">
+                                                            Top 5 Sleeveless Dresses by NTG Xintianji
+                                                        </p>
+                                                        <ul class="mt-2 list-unstyled d-flex gap-3 custom_small_01">
+                                                            <li>
+                                                                <p class="text-uppercase text-white-50 mb-0">by <span
+                                                                        class="fw-bolder text-white">Admin</span></p>
+                                                            </li>
+                                                            <li>
+                                                                <div
+                                                                    class="d-flex align-items-center text-white-50 gap-2">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 448 512" width="1rem" height="1rem"
+                                                                        fill="rgba(255,255,255,.5)">
+                                                                        <path
+                                                                            d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z" />
+                                                                    </svg>
+                                                                    DECEMBER 9, 2022
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="overflow-hidden h-100 hero_img rounded-1">
+                                            <a href="#">
+                                                <img src="https://www.radiustheme.com/demo/html/neeon/media/gallery/post-xl_1.jpg"
+                                                    class="img-fluid h-100" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 position-relative image_hover_zoom">
+                                    <div class="h-100">
+                                        <div class="position-absolute bottom-0 px-3 z-1">
+                                            <div class="ms-md-3 mb-md-5">
+                                                <a href="#"
+                                                    class="text-decoration-none text-white bg-danger d-inline-block py-1 px-2 text-uppercase custom_small_01 fw-bolder mb-3">
+                                                    Fashion
+                                                </a>
+                                                <div>
+                                                    <a href="#" class="text-decoration-none text-white">
+                                                        <p class="h4 underline_effect text-white">
+                                                            Top 5 Sleeveless Dresses by NTG Xintianji
+                                                        </p>
+                                                        <ul class="mt-2 list-unstyled d-flex gap-3 custom_small_01">
+                                                            <li>
+                                                                <p class="text-uppercase text-white-50 mb-0">by <span
+                                                                        class="fw-bolder text-white">Admin</span></p>
+                                                            </li>
+                                                            <li>
+                                                                <div
+                                                                    class="d-flex align-items-center text-white-50 gap-2">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 448 512" width="1rem" height="1rem"
+                                                                        fill="rgba(255,255,255,.5)">
+                                                                        <path
+                                                                            d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z" />
+                                                                    </svg>
+                                                                    DECEMBER 9, 2022
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="overflow-hidden h-100 hero_img rounded-1">
+                                            <a href="#">
+                                                <img src="https://www.radiustheme.com/demo/html/neeon/media/gallery/post-xl_1.jpg"
+                                                    class="img-fluid h-100" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 position-relative image_hover_zoom">
+                                    <div class="h-100">
+                                        <div class="position-absolute bottom-0 px-3 z-1">
+                                            <div class="ms-md-3 mb-md-5">
+                                                <a href="#"
+                                                    class="text-decoration-none text-white bg-danger d-inline-block py-1 px-2 text-uppercase custom_small_01 fw-bolder mb-3">
+                                                    Fashion
+                                                </a>
+                                                <div>
+                                                    <a href="#" class="text-decoration-none text-white">
+                                                        <p class="h4 underline_effect text-white">
+                                                            Top 5 Sleeveless Dresses by NTG Xintianji
+                                                        </p>
+                                                        <ul class="mt-2 list-unstyled d-flex gap-3 custom_small_01">
+                                                            <li>
+                                                                <p class="text-uppercase text-white-50 mb-0">by <span
+                                                                        class="fw-bolder text-white">Admin</span></p>
+                                                            </li>
+                                                            <li>
+                                                                <div
+                                                                    class="d-flex align-items-center text-white-50 gap-2">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 448 512" width="1rem" height="1rem"
+                                                                        fill="rgba(255,255,255,.5)">
+                                                                        <path
+                                                                            d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z" />
+                                                                    </svg>
+                                                                    DECEMBER 9, 2022
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="overflow-hidden h-100 hero_img rounded-1">
+                                            <a href="#">
+                                                <img src="https://www.radiustheme.com/demo/html/neeon/media/gallery/post-xl_1.jpg"
+                                                    class="img-fluid h-100" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div>
+                            <p class="text-uppercase fw-bold">POPULAR NEWS</p>
+                            <div class="row row-cols-1 g-3">
+                                <div class="col custom_card_03 border-bottom pb-3">
+                                    <div class="d-flex gap-4">
+                                        <div class="position-relative image_with_badge-03">
+                                            <a href="#">
+                                                <img src="https://www.radiustheme.com/demo/html/neeon/media/gallery/post-sm_1.jpg"
+                                                    class="rounded-circle" alt="">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <a href="#"
+                                                    class="text-uppercase text-decoration-none text-secondary small fw-semibold">Lifestyle</a>
+                                            </div>
+                                            <a href="#" class="text-decoration-none text-dark">
+                                                <p class="fw-semibold mb-0 lh-sm fs_custom_01 underline_effect">
+                                                    Top Beste ampute are
+                                                    Speak Market.
+                                                </p>
+                                            </a>
+                                            <div
+                                                class="d-flex align-items-center text-secondary-emphasis gap-2 custom_small_01 mt-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                                    width="1rem" height="1rem" fill="#a5a6aa">
+                                                    <path
+                                                        d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z">
+                                                    </path>
+                                                </svg>
+                                                DECEMBER 9, 2022
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col custom_card_03 border-bottom pb-3">
+                                    <div class="d-flex gap-4">
+                                        <div class="position-relative image_with_badge-03">
+                                            <a href="#">
+                                                <img src="https://www.radiustheme.com/demo/html/neeon/media/gallery/post-sm_1.jpg"
+                                                    class="rounded-circle" alt="">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <a href="#"
+                                                    class="text-uppercase text-decoration-none text-secondary small fw-semibold">Lifestyle</a>
+                                            </div>
+                                            <a href="#" class="text-decoration-none text-dark">
+                                                <p class="fw-semibold mb-0 lh-sm fs_custom_01 underline_effect">
+                                                    Top Beste ampute are
+                                                    Speak Market.
+                                                </p>
+                                            </a>
+                                            <div
+                                                class="d-flex align-items-center text-secondary-emphasis gap-2 custom_small_01 mt-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                                    width="1rem" height="1rem" fill="#a5a6aa">
+                                                    <path
+                                                        d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z">
+                                                    </path>
+                                                </svg>
+                                                DECEMBER 9, 2022
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col custom_card_03 border-bottom pb-3">
+                                    <div class="d-flex gap-4">
+                                        <div class="position-relative image_with_badge-03">
+                                            <a href="#">
+                                                <img src="https://www.radiustheme.com/demo/html/neeon/media/gallery/post-sm_1.jpg"
+                                                    class="rounded-circle" alt="">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <a href="#"
+                                                    class="text-uppercase text-decoration-none text-secondary small fw-semibold">Lifestyle</a>
+                                            </div>
+                                            <a href="#" class="text-decoration-none text-dark">
+                                                <p class="fw-semibold mb-0 lh-sm fs_custom_01 underline_effect">
+                                                    Top Beste ampute are
+                                                    Speak Market.
+                                                </p>
+                                            </a>
+                                            <div
+                                                class="d-flex align-items-center text-secondary-emphasis gap-2 custom_small_01 mt-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                                    width="1rem" height="1rem" fill="#a5a6aa">
+                                                    <path
+                                                        d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z">
+                                                    </path>
+                                                </svg>
+                                                DECEMBER 9, 2022
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col custom_card_03">
+                                    <div class="d-flex gap-4">
+                                        <div class="position-relative image_with_badge-03">
+                                            <a href="#">
+                                                <img src="https://www.radiustheme.com/demo/html/neeon/media/gallery/post-sm_1.jpg"
+                                                    class="rounded-circle" alt="">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <a href="#"
+                                                    class="text-uppercase text-decoration-none text-secondary small fw-semibold">Lifestyle</a>
+                                            </div>
+                                            <a href="#" class="text-decoration-none text-dark">
+                                                <p class="fw-semibold mb-0 lh-sm fs_custom_01 underline_effect">
+                                                    Top Beste ampute are
+                                                    Speak Market.
+                                                </p>
+                                            </a>
+                                            <div
+                                                class="d-flex align-items-center text-secondary-emphasis gap-2 custom_small_01 mt-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                                    width="1rem" height="1rem" fill="#a5a6aa">
+                                                    <path
+                                                        d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z">
+                                                    </path>
+                                                </svg>
+                                                DECEMBER 9, 2022
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <p class="h3 mt-5 mb-4 fw-bold">Latest New</p>
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="card mb-3 border-0 image_hover_zoom border-bottom pb-3 rounded-0">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <div class="overflow-hidden">
+                                        <img src="https://www.healthinfolife.com/images/blog/computer-desk---.jpg"
+                                        class="img-fluid" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body d-flex flex-column justify-content-between h-100 py-md-0">
+                                        <div>
+                                            <a href="#"
+                                                class="text-decoration-none text-white bg-danger d-inline-block py-1 px-2 text-uppercase custom_small_01 fw-bolder mb-3 mb-md-0">
+                                                Fashion
+                                            </a>
+                                        </div>
+                                        <a href="#" class="text-decoration-none text-dark">
+                                            <p class="fw-semibold mb-0 lh-sm underline_effect h3">
+                                                Top Beste ampute are
+                                                Speak Market.
+                                            </p>
+                                        </a>
+                                        <ul class="mt-2 list-unstyled d-flex flex-wrap custom_small_01 gap-2">
+                                            <li>
+                                                <p class="text-uppercase mb-0">by <span class="fw-bolder">Admin</span>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex align-items-center gap-1 ms-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                                        width="1rem" height="1rem" fill="#a5a6aa">
+                                                        <path
+                                                            d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z">
+                                                        </path>
+                                                    </svg>
+                                                    DECEMBER 9, 2022
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex align-items-center gap-1 ms-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem"
+                                                        fill="#a5a6aa" viewBox="0 0 448 512">
+                                                        <path
+                                                            d="M352 224c53 0 96-43 96-96s-43-96-96-96s-96 43-96 96c0 4 .2 8 .7 11.9l-94.1 47C145.4 170.2 121.9 160 96 160c-53 0-96 43-96 96s43 96 96 96c25.9 0 49.4-10.2 66.6-26.9l94.1 47c-.5 3.9-.7 7.8-.7 11.9c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-25.9 0-49.4 10.2-66.6 26.9l-94.1-47c.5-3.9 .7-7.8 .7-11.9s-.2-8-.7-11.9l94.1-47C302.6 213.8 326.1 224 352 224z" />
+                                                    </svg>
+                                                    42
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div>
+                                            <a href="#" class="custom_button-01 text-decoration-none">
+                                                Read More
+                                                <svg width="22px" height="16px" viewBox="0 0 34.53 16"
+                                                    xml:space="preserve">
+                                                    <rect y="7.6" width="34" height=".4">
+                                                    </rect>
+                                                    <g>
+                                                        <path class="rt-button-cap"
+                                                            d="M25.83.7l.7-.7,8,8-.7.71Zm0,14.6,8-8,.71.71-8,8Z"></path>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 border-0 image_hover_zoom border-bottom pb-3 rounded-0">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <div class="overflow-hidden">
+                                        <img src="https://www.healthinfolife.com/images/blog/computer-desk---.jpg"
+                                        class="img-fluid" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body d-flex flex-column justify-content-between h-100 py-md-0">
+                                        <div>
+                                            <a href="#"
+                                                class="text-decoration-none text-white bg-danger d-inline-block py-1 px-2 text-uppercase custom_small_01 fw-bolder mb-3 mb-md-0">
+                                                Fashion
+                                            </a>
+                                        </div>
+                                        <a href="#" class="text-decoration-none text-dark">
+                                            <p class="fw-semibold mb-0 lh-sm underline_effect h3">
+                                                Top Beste ampute are
+                                                Speak Market.
+                                            </p>
+                                        </a>
+                                        <ul class="mt-2 list-unstyled d-flex flex-wrap custom_small_01 gap-2">
+                                            <li>
+                                                <p class="text-uppercase mb-0">by <span class="fw-bolder">Admin</span>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex align-items-center gap-1 ms-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                                        width="1rem" height="1rem" fill="#a5a6aa">
+                                                        <path
+                                                            d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z">
+                                                        </path>
+                                                    </svg>
+                                                    DECEMBER 9, 2022
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex align-items-center gap-1 ms-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem"
+                                                        fill="#a5a6aa" viewBox="0 0 448 512">
+                                                        <path
+                                                            d="M352 224c53 0 96-43 96-96s-43-96-96-96s-96 43-96 96c0 4 .2 8 .7 11.9l-94.1 47C145.4 170.2 121.9 160 96 160c-53 0-96 43-96 96s43 96 96 96c25.9 0 49.4-10.2 66.6-26.9l94.1 47c-.5 3.9-.7 7.8-.7 11.9c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-25.9 0-49.4 10.2-66.6 26.9l-94.1-47c.5-3.9 .7-7.8 .7-11.9s-.2-8-.7-11.9l94.1-47C302.6 213.8 326.1 224 352 224z" />
+                                                    </svg>
+                                                    42
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div>
+                                            <a href="#" class="custom_button-01 text-decoration-none">
+                                                Read More
+                                                <svg width="22px" height="16px" viewBox="0 0 34.53 16"
+                                                    xml:space="preserve">
+                                                    <rect y="7.6" width="34" height=".4">
+                                                    </rect>
+                                                    <g>
+                                                        <path class="rt-button-cap"
+                                                            d="M25.83.7l.7-.7,8,8-.7.71Zm0,14.6,8-8,.71.71-8,8Z"></path>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 border-0 image_hover_zoom border-bottom pb-3 rounded-0">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <div class="overflow-hidden">
+                                        <img src="https://www.healthinfolife.com/images/blog/computer-desk---.jpg"
+                                        class="img-fluid" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body d-flex flex-column justify-content-between h-100 py-md-0">
+                                        <div>
+                                            <a href="#"
+                                                class="text-decoration-none text-white bg-danger d-inline-block py-1 px-2 text-uppercase custom_small_01 fw-bolder mb-3 mb-md-0">
+                                                Fashion
+                                            </a>
+                                        </div>
+                                        <a href="#" class="text-decoration-none text-dark">
+                                            <p class="fw-semibold mb-0 lh-sm underline_effect h3">
+                                                Top Beste ampute are
+                                                Speak Market.
+                                            </p>
+                                        </a>
+                                        <ul class="mt-2 list-unstyled d-flex flex-wrap custom_small_01 gap-2">
+                                            <li>
+                                                <p class="text-uppercase mb-0">by <span class="fw-bolder">Admin</span>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex align-items-center gap-1 ms-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                                        width="1rem" height="1rem" fill="#a5a6aa">
+                                                        <path
+                                                            d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z">
+                                                        </path>
+                                                    </svg>
+                                                    DECEMBER 9, 2022
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex align-items-center gap-1 ms-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem"
+                                                        fill="#a5a6aa" viewBox="0 0 448 512">
+                                                        <path
+                                                            d="M352 224c53 0 96-43 96-96s-43-96-96-96s-96 43-96 96c0 4 .2 8 .7 11.9l-94.1 47C145.4 170.2 121.9 160 96 160c-53 0-96 43-96 96s43 96 96 96c25.9 0 49.4-10.2 66.6-26.9l94.1 47c-.5 3.9-.7 7.8-.7 11.9c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-25.9 0-49.4 10.2-66.6 26.9l-94.1-47c.5-3.9 .7-7.8 .7-11.9s-.2-8-.7-11.9l94.1-47C302.6 213.8 326.1 224 352 224z" />
+                                                    </svg>
+                                                    42
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div>
+                                            <a href="#" class="custom_button-01 text-decoration-none">
+                                                Read More
+                                                <svg width="22px" height="16px" viewBox="0 0 34.53 16"
+                                                    xml:space="preserve">
+                                                    <rect y="7.6" width="34" height=".4">
+                                                    </rect>
+                                                    <g>
+                                                        <path class="rt-button-cap"
+                                                            d="M25.83.7l.7-.7,8,8-.7.71Zm0,14.6,8-8,.71.71-8,8Z"></path>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 border-0 image_hover_zoom">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <div class="overflow-hidden">
+                                        <img src="https://www.healthinfolife.com/images/blog/computer-desk---.jpg"
+                                        class="img-fluid" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body d-flex flex-column justify-content-between h-100 py-md-0">
+                                        <div>
+                                            <a href="#"
+                                                class="text-decoration-none text-white bg-danger d-inline-block py-1 px-2 text-uppercase custom_small_01 fw-bolder mb-3 mb-md-0">
+                                                Fashion
+                                            </a>
+                                        </div>
+                                        <a href="#" class="text-decoration-none text-dark">
+                                            <p class="fw-semibold mb-0 lh-sm underline_effect h3">
+                                                Top Beste ampute are
+                                                Speak Market.
+                                            </p>
+                                        </a>
+                                        <ul class="mt-2 list-unstyled d-flex flex-wrap custom_small_01 gap-2">
+                                            <li>
+                                                <p class="text-uppercase mb-0">by <span class="fw-bolder">Admin</span>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex align-items-center gap-1 ms-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                                        width="1rem" height="1rem" fill="#a5a6aa">
+                                                        <path
+                                                            d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z">
+                                                        </path>
+                                                    </svg>
+                                                    DECEMBER 9, 2022
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex align-items-center gap-1 ms-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem"
+                                                        fill="#a5a6aa" viewBox="0 0 448 512">
+                                                        <path
+                                                            d="M352 224c53 0 96-43 96-96s-43-96-96-96s-96 43-96 96c0 4 .2 8 .7 11.9l-94.1 47C145.4 170.2 121.9 160 96 160c-53 0-96 43-96 96s43 96 96 96c25.9 0 49.4-10.2 66.6-26.9l94.1 47c-.5 3.9-.7 7.8-.7 11.9c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-25.9 0-49.4 10.2-66.6 26.9l-94.1-47c.5-3.9 .7-7.8 .7-11.9s-.2-8-.7-11.9l94.1-47C302.6 213.8 326.1 224 352 224z" />
+                                                    </svg>
+                                                    42
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div>
+                                            <a href="#" class="custom_button-01 text-decoration-none">
+                                                Read More
+                                                <svg width="22px" height="16px" viewBox="0 0 34.53 16"
+                                                    xml:space="preserve">
+                                                    <rect y="7.6" width="34" height=".4">
+                                                    </rect>
+                                                    <g>
+                                                        <path class="rt-button-cap"
+                                                            d="M25.83.7l.7-.7,8,8-.7.71Zm0,14.6,8-8,.71.71-8,8Z"></path>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="subscribe p-5 rounded">
+                            <div class="px-2 text-center">
+                                <p class="h4 fw-semibold position-relative pb-4">Subscribe To Our Newsletter</p>
+                                <p>No spam, notifications only about new products, updates.</p>
+                            </div>
+                            <div>
+                                <input type="email" class="form-control py-2 rounded-0 mb-3" placeholder="Email*">
+                                <button class="btn btn-primary w-100 text-capitalize fw-semibold rounded-0 py-2">Subscribe Now</button>
+                            </div>
+                            <p class="custom_small_01 text-muted text-center mb-0">Don’t worry, we don’t spam</p>
+                        </div>
+                        <div class="">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#" class="text-decoration-none text-white cate_list d-flex justify-content-center align-items-center w-100" style="background-image:url('https://www.healthinfolife.com/images/category/home-and-tech.jpeg');background-size:cover;">
+                                    <span>Home And Tech</span>
+                                    <span>9</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="bg-black">
+            <div class="container text-white py-5">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="d-flex justify-content-center mb-3">
+                            <img src="https://www.healthinfolife.com/images/footer_logo.png" class="img-fluid"
+                                width="200" height="100" alt="">
+                        </div>
+                        <p>
+                            Welcome to the HealthinfoLife that was born to make you happy and for giving you the
+                            facilities
+                            that no one offer you before. At this site you can find your loving and desired products at
+                            top-notch brand stores to shop your favored products in mind-blowing and incredibly amazing
+                            prices. healthinfoLife is that website that generated to give you best shopping experience
+                            it is
+                            an user-friendly and handy website which really matches to your requisite, as we lead
+                            first-class products in a prices that going to make you amazed at your threshold
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="h5 fw-semibold text-center">Recent Posts</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="h5 fw-semibold text-center">Useful links</p>
+                        <ul class="list-unstyled text-center d-flex flex-column gap-3 mt-4">
+                            <li>
+                                <a class="text-decoration-none text-white" href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a class="text-decoration-none text-white" href="#">Terms &amp; Conditions</a>
+                            </li>
+                            <li>
+                                <a class="text-decoration-none text-white" href="#">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a class="text-decoration-none text-white" href="#">Promotions</a>
+                            </li>
+                            <li>
+                                <a class="text-decoration-none text-white" href="#">Impressum </a>
+                            </li>
+                            <li>
+                                <a class="text-decoration-none text-white" href="#">Sitemap</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
