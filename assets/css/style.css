@@ -8,7 +8,7 @@ body {
 }
 
 main {
-  padding: 100px 0;
+  padding: 90px 0 30px 0;
 }
 
 .image_hover_zoom img {
@@ -43,10 +43,12 @@ main {
   height: 100%;
   position: absolute;
   pointer-events: none;
-  background-image: linear-gradient(to bottom,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0.2) 59%,
-      rgba(0, 0, 0, 0.8) 100%);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.2) 59%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
 }
 
 .underline_effect {
@@ -56,9 +58,11 @@ main {
   background-size: 0% 2px;
   background-repeat: no-repeat;
   background-position: left 100%;
-  background-image: linear-gradient(to bottom,
-      currentColor 0%,
-      currentColor 98%);
+  background-image: linear-gradient(
+    to bottom,
+    currentColor 0%,
+    currentColor 98%
+  );
   transition: background-size 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
@@ -195,12 +199,11 @@ main {
   transition: all 0.3s ease;
 }
 
-.custom_button-01>svg {
+.custom_button-01 > svg {
   margin-left: 7px;
 }
 
 @keyframes svgAni-01 {
-
   0%,
   10%,
   100% {
@@ -254,10 +257,10 @@ main {
   }
 }
 
-.custom_button-01>svg>rect {
+.custom_button-01 > svg > rect {
   height: 1.5px;
   transition: 0.5s linear;
-  transform: translateX(-13px);
+  transform: translateX(-2px);
 }
 
 .custom_button-01:hover {
@@ -269,22 +272,23 @@ main {
     fill: #fff;
   }
 
-  svg>rect {
+  svg > rect {
     animation: svgAni-01 0.4s ease forwards;
   }
 
-  svg>g {
+  svg > g {
     animation: svgAni-02 0.35s linear;
   }
 
-  svg>g>path {
+  svg > g > path {
     transform-origin: right;
     animation: svgAni-03 0.4s ease forwards;
   }
 }
 
 .subscribe {
-  background: url("https://radiustheme.com/demo/html/neeon/media/elements/element_5.png") no-repeat;
+  background: url("https://radiustheme.com/demo/html/neeon/media/elements/element_5.png")
+    no-repeat;
   background-size: cover;
 }
 
@@ -305,7 +309,7 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .cate_list:hover {
@@ -333,12 +337,12 @@ main {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.cate_list>span:nth-child(1) {
+.cate_list > span:nth-child(1) {
   transform: translateX(0);
   transition: all 0.3s ease;
 }
 
-.cate_list>span:nth-child(2) {
+.cate_list > span:nth-child(2) {
   width: 40px;
   height: 40px;
   transition: all 0.3s ease;
@@ -353,7 +357,7 @@ main {
 .social-icons:hover {
   color: #fff !important;
   background-color: var(--basic-primary) !important;
-  svg{
+  svg {
     animation: social-icons 0.5s forwards;
   }
 }
@@ -372,13 +376,56 @@ main {
     opacity: 1;
   }
 }
-nav > .breadcrumb > .breadcrumb-item > a{
+nav > .breadcrumb > .breadcrumb-item > a {
   transition: all 0.3s ease;
 }
-nav > .breadcrumb > .breadcrumb-item > a:hover
-{
+nav > .breadcrumb > .breadcrumb-item > a:hover {
   color: var(--basic-primary) !important;
-  svg{
+  svg {
     fill: var(--basic-primary);
   }
+}
+.coupon_custom_btn > div {
+  border: #000 2px dashed;
+  height: 45px;
+}
+.coupons_custom_btn {
+  height: 45px;
+}
+.coupons_custom_btn > div {
+  left: -7px;
+  height: 45px;
+  width: 97%;
+  transition: width 0.3s ease-in-out;
+}
+.coupons_custom_btn > div:hover {
+  width: 92%;
+}
+.coupons_custom_btn > div > button {
+  width: 95%;
+  transform: skew(-20deg, 0deg);
+  transition: background-color 0.3s;
+}
+.coupons_custom_btn > div > button > span {
+  transform: skew(20deg, 0deg);
+}
+#search_response{
+  max-height: 350px;
+}
+.nav-tabs>.nav-item {
+  padding: 8px 10px;
+}
+
+.nav-tabs>.nav-item.active {
+  border-bottom: 4px solid black;
+  font-weight: 800;
+}
+.font-weight-effect {
+  transition: font-weight 0.3s ease;
+}
+.font-weight-effect:hover {
+  font-weight: 800 !important;
+}
+.custom_button-02{
+  border: 1px dashed #fff;
 }
